@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Gebeta</string>
+    <string name="text_slogan">Order made easier</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_link_sign_in">Already have an account?</string>
+    <string name="text_phone_number">Phone Number</string>
+    <string name="text_my_phone_number">941232484</string>
+    <string name="text_username">Username</string>
+    <string name="text_my_username">Habib23me</string>
+    <string name="text_password">Password</string>
+    <string name="text_my_password">habib32me</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_link_sign_up">Not a member yet?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Page %1$d</string>
+
+    <array name="food_image_pager">
+        <item>@drawable/img_baseball</item>
+        <item>@drawable/img_badminton</item>
+        <item>@drawable/img_basketball</item>
+        <item>@drawable/img_bowling</item>
+        <item>@drawable/img_cycling</item>
+        <item>@drawable/img_golf</item>
+        <item>@drawable/img_running</item>
+        <item>@drawable/img_soccer</item>
+        <item>@drawable/img_swimming</item>
+        <item>@drawable/img_tabletennis</item>
+    </array>
+    <string-array name="viewpager_title">
+        <item>Pager 0</item>
+        <item>Pager 1</item>
+        <item>Pager 2</item>
+        <item>Pager 3</item>
+        <item>Pager 4</item>
+
+    </string-array>
+    <string-array name="viewpager_body">
+        <item>Pager details random, Lorem ipsum characters ment for testing of programs and characters or displaying random informations</item>
+        <item>Pager details random, Lorem ipsum characters ment for testing of programs and characters or displaying random informations</item>
+        <item>Pager details random, Lorem ipsum characters ment for testing of programs and characters or displaying random informations</item>
+        <item>Pager details random, Lorem ipsum characters ment for testing of programs and characters or displaying random informations</item>
+        <item>Pager details random, Lorem ipsum characters ment for testing of programs and characters or displaying random informations</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_main">Main</string>
+    <string name="text_category">Category</string>
+</resources>

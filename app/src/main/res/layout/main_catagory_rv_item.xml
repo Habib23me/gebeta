@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardCornerRadius="2dp"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:background="@color/grey"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Class"
+                    android:textSize="16dp"
+                    android:textColor="@color/blackish"/>
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 list"
+                    />
+            </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_weight="0.3">
+                    <ImageView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/likes_ic"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_heart"/>
+                    <TextView
+                        android:id="@+id/likes_tv"
+                        android:layout_toRightOf="@+id/likes_ic"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120"
+                        android:layout_marginRight="10dp"/>
+                    <ImageView
+                        android:layout_toRightOf="@+id/likes_tv"
+                        android:id="@+id/reviews_ic"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_review"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/reviews_ic"
+                        android:id="@+id/reviews_tv"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="VIEW"/>
+                </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
