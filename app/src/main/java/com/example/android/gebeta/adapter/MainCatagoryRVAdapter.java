@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.android.gebeta.R;
-import com.example.android.gebeta.data.Food;
+import com.example.android.gebeta.model.Food;
 
 import java.util.ArrayList;
 import java.util.List;

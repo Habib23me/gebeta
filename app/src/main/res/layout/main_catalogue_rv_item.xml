@@ -9,6 +9,19 @@
     android:clickable="true"
     app:cardCornerRadius="2dp"
     android:focusable="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:background="@color/green"
+        android:id="@+id/main_catalogue_price_tv"
+        android:layout_width="wrap_content"
+        android:text="30 ETB"
+        android:layout_gravity="top|left"
+        android:textColor="@android:color/white"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,5 +86,5 @@
 
 
     </LinearLayout>
-
+    </FrameLayout>
 </android.support.v7.widget.CardView>

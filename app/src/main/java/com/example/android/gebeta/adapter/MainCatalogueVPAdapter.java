@@ -1,6 +1,7 @@
 package com.example.android.gebeta.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.widget.CardView;
@@ -12,7 +13,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.android.gebeta.R;
-import com.example.android.gebeta.data.CardItem;
+import com.example.android.gebeta.activities.DetailActivity;
+import com.example.android.gebeta.model.CardItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,6 +71,13 @@ public class MainCatalogueVPAdapter extends PagerAdapter {
         //instantiate cardView and add to mCardViews list
         CardView cardView= layoutView.findViewById(R.id.card_view_pager);
         mCardViews.set(position,cardView);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent moveToDetail= new Intent(mContext, DetailActivity.class);
+                mContext.startActivity(moveToDetail);
+            }
+        });
 
         //make shadow
         makeShadow(cardView);

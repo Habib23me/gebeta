@@ -15,16 +15,17 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="0.6"
+            android:gravity="center"
             android:layout_marginRight="10dp"
             android:layout_height="match_parent">
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/img_thumb"
-                android:background="@color/grey"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"/>
         </LinearLayout>
         <LinearLayout
 
@@ -37,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:paddingTop="20dp"
+                android:paddingTop="40dp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/tv_food_name"
@@ -62,13 +63,13 @@
                     <ImageView
                         android:layout_alignParentLeft="true"
                         android:id="@+id/likes_ic"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
                         android:src="@drawable/ic_heart"/>
                     <TextView
                         android:id="@+id/likes_tv"
                         android:layout_toRightOf="@+id/likes_ic"
-                        android:textSize="12sp"
+                        android:textSize="13sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="120"
@@ -76,13 +77,13 @@
                     <ImageView
                         android:layout_toRightOf="@+id/likes_tv"
                         android:id="@+id/reviews_ic"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
                         android:src="@drawable/ic_review"/>
                     <TextView
                         android:layout_toRightOf="@+id/reviews_ic"
                         android:id="@+id/reviews_tv"
-                        android:textSize="12sp"
+                        android:textSize="13sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="50" />

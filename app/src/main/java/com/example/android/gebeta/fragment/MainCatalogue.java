@@ -13,15 +13,15 @@ import android.view.ViewGroup;
 import com.example.android.gebeta.R;
 import com.example.android.gebeta.adapter.MainCatalogueVPAdapter;
 import com.example.android.gebeta.adapter.MainCatalogueRVAdapter;
-import com.example.android.gebeta.data.CardItem;
-import com.example.android.gebeta.data.Food;
+import com.example.android.gebeta.model.CardItem;
+import com.example.android.gebeta.model.Food;
 import com.example.android.gebeta.utils.ShadowTransformer;
 
 
 
 public class MainCatalogue extends Fragment {
 
-
+    //Viewpager Section
     private ViewPager mViewPager;
     private MainCatalogueVPAdapter mCardAdapter;
     private ShadowTransformer mCardShadowTransformer;

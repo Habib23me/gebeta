@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.android.gebeta"
@@ -11,6 +14,9 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            ext.enableCrashlytics = false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -27,6 +33,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //Added libraries
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.shawnlin:number-picker:2.4.4'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'

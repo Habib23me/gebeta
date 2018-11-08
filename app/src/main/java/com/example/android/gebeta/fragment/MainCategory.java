@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.example.android.gebeta.R;
 import com.example.android.gebeta.adapter.MainCatagoryRVAdapter;
-import com.example.android.gebeta.data.Food;
+import com.example.android.gebeta.model.Food;
 
 public class MainCategory extends Fragment {
     private RecyclerView mRecyclerView;
@@ -46,6 +46,7 @@ public class MainCategory extends Fragment {
         for (int i=0; i<titlesText.length; i++){
             mMainCatagoryRVAdapter.addFoodItem(new Food(titlesText[i], 10,200,120, foodImageResource.getResourceId(i,0)));
         }
+        foodImageResource.recycle();
         mMainCatagoryRVAdapter.notifyDataSetChanged();
     }
 
